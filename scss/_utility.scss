@@ -1,0 +1,94 @@
+.container {
+  max-width: $website_width;
+  margin: auto;
+  padding: 0 1.5rem;
+  overflow: hidden;
+}
+
+%but-shared {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  transition: all 0.5s;
+  cursor: pointer;
+  border: none;
+}
+
+.btn {
+  &-main {
+    @extend %but-shared;
+    color: #333;
+    background: $main-color;
+  }
+  &-light {
+    @extend %but-shared;
+    color: #333;
+    background: $light-color;
+  }
+  &-dark {
+    @extend %but-shared;
+    color: #f4f4f4;
+    background: $dark-color;
+  }
+}
+.button[class^="btn-"]:hover,
+a[class^="btn-"]:hover,
+input[class^="btn-"]:hover {
+  background-color: $main-color;
+}
+
+.lead {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+// padding
+.py {
+  &-2 {
+    padding: 2rem 0;
+  }
+  &-1 {
+    padding: 1rem 0;
+  }
+  &-3 {
+    padding: 3rem 0;
+  }
+  &-4 {
+    padding: 4rem 0;
+  }
+}
+.section-title {
+  font-size: 2rem;
+  display: block;
+  padding-bottom: 0.5rem;
+  font-weight: 100;
+}
+
+.bottom-line {
+  height: 2px;
+  width: 3rem;
+  background: $main-color;
+  display: block;
+  margin: 0 auto;
+}
+// background
+.bg {
+  &-dark {
+    background: #333;
+    color: #fff;
+  }
+  &-main {
+    background: $main-color;
+    color: #fff;
+  }
+  &-light {
+    background: $light-color;
+    color: #333333;
+  }
+}
+my-2 {
+  margin-top: 2rem;
+}
